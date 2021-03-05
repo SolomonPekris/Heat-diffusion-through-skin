@@ -9,7 +9,7 @@ function[gamma] = TissueDamage(flow, c0)
 
 % set constants
 dt = 0.01; % set timestep
-Ne6 = 5; % set number of elements divided by 6
+Ne6 = 10; % set number of elements divided by 6
 c = SkinTempDiffusion1D(dt,flow,Ne6,c0,'no'); % calculates transient temperature distribution
 e = 21; % node at epidermis
 d = 61; % node at dermis
